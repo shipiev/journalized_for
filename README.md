@@ -1,6 +1,6 @@
 # JournalizedFor
 
-TODO: Write a gem description
+Plug-in for Redmine. It journalize has_one and has_many association
 
 ## Installation
 
