@@ -18,7 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Model
+
+    class Attachment < ActiveRecord::Base
+        ...
+        journalized_for :container, if: ->(object){ object.respond_to?(:journals) }, title: 'to_s'
+        ...
+    end
+
+Or
+
+    class Attachment < ActiveRecord::Base
+        ...
+        journalized_for :container
+        ...
+    end
 
 ## Contributing
 
